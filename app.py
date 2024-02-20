@@ -212,7 +212,7 @@ def generate_wordcloud_with_words(text, included_words):
 
 
 # Streamlit App
-st.sidebar.title("<style> .css-1l4vhgv { margin-bottom: -20px; }</style> **Whatsapp Chat Analyzer**")
+st.sidebar.markdown("**Whatsapp Chat Analyzer**<br><br>", unsafe_allow_html=True)
 
 st.sidebar.markdown("<sub><b>by SANKALP SHARMA</b></sub>", unsafe_allow_html=True)
 
