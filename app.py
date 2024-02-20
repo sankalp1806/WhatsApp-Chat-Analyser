@@ -212,8 +212,9 @@ def generate_wordcloud_with_words(text, included_words):
 
 
 # Streamlit App
-st.sidebar.title("**Whatsapp Chat Analyzer**<br>")
-st.sidebar.markdown("<p style='font-size:small'><b>-By SANKALP SHARMA</b></p>", unsafe_allow_html=True)
+st.sidebar.title("<style> .css-1l4vhgv { margin-bottom: -20px; }</style> **Whatsapp Chat Analyzer**")
+
+st.sidebar.markdown("<sub><b>by SANKALP SHARMA</b></sub>", unsafe_allow_html=True)
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
@@ -227,6 +228,7 @@ if uploaded_file is not None:
     user_list.insert(0, "Overall")
 
     selected_user = st.sidebar.selectbox("Show analysis wrt", user_list)
+
 
     if st.sidebar.button("Show Analysis"):
         num_messages, words, num_media_messages, num_links = fetch_stats(selected_user, df)
