@@ -213,7 +213,7 @@ def generate_wordcloud_with_words(text, included_words):
 
 # Streamlit App
 st.sidebar.title("**Whatsapp Chat Analyzer**")
-st.sidebar.markdown("<p style='font-size:small'><b>By SANKALP SHARMA</b></p>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='font-size:small'><b> -By SANKALP SHARMA</b></p>", unsafe_allow_html=True)
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
